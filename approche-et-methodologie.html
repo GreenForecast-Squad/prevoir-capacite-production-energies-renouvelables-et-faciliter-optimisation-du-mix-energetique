@@ -15,13 +15,15 @@
       <ul class="space-y-2">
         <li><a href="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/#introduction" class="block p-2 hover:bg-gray-700 rounded">Introduction</a></li>
         <li><a href="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/#team" class="block p-2 hover:bg-gray-700 rounded">Équipe</a></li>
-        <li><a href="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/#problem" class="block p-2 hover:bg-gray-700 rounded">Problématique</a></li>
+        <li><a href="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/#problem" class="block p-2 hover:bg-gray-700 rounded">Problématiques</a></li>
         <li><a href="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/approche-et-methodologie.html" class="block p-2 hover:bg-gray-700 rounded">Approche et méthodologie</a></li>
         <li class="pl-4"><a href="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/approche-et-methodologie.html" class="block p-2 hover:bg-gray-700 rounded">Données météorologiques</a></li>
         <li class="pl-4"><a href="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/approche-et-methodologie.html" class="block p-2 hover:bg-gray-700 rounded">Données RTE</a></li>
-        <li class="pl-4"><a href="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/approche-et-methodologie.html" class="block p-2 hover:bg-gray-700 rounded">Modélisation</a></li>
         <li class="pl-4"><a href="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/approche-et-methodologie.html" class="block p-2 hover:bg-gray-700 rounded">Modèle prédictif</a></li>
         <li><a href="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/conclusion-et-solutions.html" class="block p-2 hover:bg-gray-700 rounded">Conclusion et solutions</a></li>
+        <li class="pl-4"><a href="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/conclusion-et-solutions.html#user-cible" class="block p-2 hover:bg-gray-700 rounded">Utilisateurs ciblés</a></li>
+        <li class="pl-4"><a href="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/conclusion-et-solutions.html#jour-tempo-rte" class="block p-2 hover:bg-gray-700 rounded">Jours TEMPO</a></li>
+        <li class="pl-4"><a href="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/conclusion-et-solutions.html#alerte-mail" class="block p-2 hover:bg-gray-700 rounded">Alertes mail</a></li>
       </ul>
     </div>
   </div>
@@ -29,36 +31,73 @@
   <!-- Content -->
   <div class="flex-1 ml-64 bg-gray-100 py-7 px-36">
     <h2 id="introduction" class="font-bold text-2xl mb-4">Approche et méthodolofie</h2>
+    <hr><br>
     
     <div id="meteorological-data-analysis" class="mb-6">
       <h4 class="text-lg font-semibold mb-2">Analyse des données météorologiques</h4>
-      <p>Utilisation des prévisions météo du modèle ARPEGE, avec une attention particulière sur les prévisions du flux solaire moyen, de la vitesse du vent moyen et des températures moyennes annuelles en France. Le but étant d’avoir des indicateurs de ces prévisions par jour.</p>
+      <p>Utilisation des prévisions météo du modèle ARPEGE, avec une attention particulière sur les prévisions du <strong>flux solaire moyen, de la vitesse du vent moyen et des températures moyennes annuelles</strong> en France. Le but étant d’avoir des indicateurs de ces prévisions par jour.</p>
+      <div class="text-center">
+        <img src="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/assets/prevision-flux-solaire-arpege.png" alt="prevision-flux-solaire-arpege" class="rounded-lg mx-auto">
+        <p class="text-sm text-gray-500 p-2">Prévision du flux solaire moyen en France via l'historique des prévision du modèle ARPEGE</p>
+      </div>
+      <div class="text-center">
+        <img src="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/assets/prevision-vitesse-moyenne-vent-arpege.png" alt="prevision-vitesse-moyenne-vent-arpege" class="rounded-lg mx-auto">
+        <p class="text-sm text-gray-500 p-2">Prévision de la vitesse du vent moyen en France via l'historique des prévision du modèle ARPEGE</p>
+      <div class="text-center">
+        <img src="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/assets/graph-arpege-vitesse-vent-energie-solaire.png" alt="prevision-flux-solaire-arpege" class="rounded-lg mx-auto">
+        <p class="text-sm text-gray-500 p-2">Corrélation entre la vitesse du vent et le flux solaire</p>
+      </div>
     </div>
   
     <div id="consumption-production-analysis" class="mb-6">
       <h4 class="text-lg font-semibold mb-2">Analyse des données de consommation et production Eco2mix et des jours TEMPO</h4>
       <p>Formatage des données de consommation et production énergétique fournies par RTE, incluant les consommations réelles et les prévisions.</p>
-      <ul class="list-disc pl-5 mb-4">
+      <ul class="list-disc pl-10 mb-4">
         <li>Nature</li>
         <li>Date</li>
         <li>Heures</li>
         <li>Consommation</li>
         <li>Prévision J-1</li>
         <li>Prévision J</li>
-        <!-- Add other indicators here -->
+        <li>Fioul</li>
+        <li>Charbon</li>
+        <li>Gaz</li>
+        <li>Nucléaire</li>
+        <li>Éolien</li>
+        <li>Solaire</li>
+        <li>Hydraulique</li>
+        <li>Pompage</li>
+        <li>Bioénergies</li>
+        <li>Échanges physiques</li>
+        <li>Taux de CO2</li>
+        <li>Échanges commerciaux</li>
+        <li>Stockage batterie</li>
+        <li>Déstockage batterie</li>
+        <li>Type de jour TEMPO</li>
       </ul>
-      <p>[Détail des indicateurs]</p>
-      <p>[Détail du calcul de l'analyse + ressource]</p>
+      <p>Le descriptif des fichiers des données en puissance est disponible <a href="https://assets.rte-france.com/prod/public/2020-07/%C3%A9CO2mix%20-%20Description%20des%20fichiers%20des%20donn%C3%A9es%20en%20puissance.pdf" class="text-blue-500 hover:text-blue-700">ici</a>.</p>
+      <p>Voici les étapes du traitements :</p>
+      <ul class="list-disc pl-10 mb-4">
+        <li> <a class="text-blue-500 hover:text-blue-700" href="https://github.com/GreenForecast-Squad/energetic-stress-production/blob/main/transform_data_RTE.ipynb" target="_blank">script de transformation</a></li>
+        <li><a class="text-blue-500 hover:text-blue-700" href="https://github.com/GreenForecast-Squad/energetic-stress-production/blob/main/concat_all_tempo.ipynb" target="_blank">script de concaténation</a></li>
+        <li><a class="text-blue-500 hover:text-blue-700" href="https://github.com/GreenForecast-Squad/energetic-stress-production/blob/main/rte_tempo_join.ipynb" target="_blank">script de jointure</a></li>
+        <li><a class="text-blue-500 hover:text-blue-700" href="https://github.com/GreenForecast-Squad/energetic-stress-production/blob/main/aggregate_rte.ipynb" target="_blank">script d'aggréation finale</a></li>
+      </ul>
     </div>
   
     <div id="data-preparation-modeling" class="mb-6">
       <h4 class="text-lg font-semibold mb-2">Préparation des données pour la modélisation</h4>
       <p>Concaténation des données météorologiques et de consommation énergétique pour créer un ensemble unifié utilisé pour le développement d'un modèle prédictif.</p>
+      <p> <a class="text-blue-500 hover:text-blue-700" href="https://github.com/GreenForecast-Squad/energetic-stress-production/blob/main/aggregate_rte.ipynb" target="_blank">même script d'aggréation finale</a></p>
     </div>
   
     <div id="predictive-model-development" class="mb-6">
       <h4 class="text-lg font-semibold mb-2">Développement d'un modèle prédictif</h4>
       <p>Mise en place d'un modèle exploitant l'ensemble de données consolidé pour anticiper les situations de stress énergétique, y compris la prédiction des jours TEMPO rouge, tout en tenant compte des divers facteurs influençant la consommation et la production énergétique.</p>
+      <div class="text-center">
+        <img src="https://greenforecast-squad.github.io/prevoir-capacite-production-energies-renouvelables-et-faciliter-optimisation-du-mix-energetique/assets/matrice-correlation-rte-mf.png" alt="problematique-illustration-conso-elec-hausse" class="rounded-lg mx-auto">
+        <p class="text-sm text-gray-500 p-2">Plus notre consommation est haute en comparaison à notre production, plus le taux de CO2 augmente dans notre mix électrique</p>
+      </div>
     </div>
   </div>
 
